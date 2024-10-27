@@ -14,7 +14,7 @@ import { resolve } from "path";
 export default async function RevenueChart() {
 
   // Make component async, remove the props
-  await new Promise(resolve => setTimeout(resolve, 2000))
+  // await new Promise(resolve => setTimeout(resolve, 2000))
   const revenue = await fetchRevenue(); // Fetch data inside the component
   const chartHeight = 350;
   // NOTE: Uncomment this code in Chapter 7
