@@ -5,7 +5,7 @@ import LatestInvoices from "@/app/ui/dashboard/latest-invoices";
 import { fetchRevenue, fetchLatestInvoices } from "@/app/lib/data";
 import { Suspense } from "react";
 import { RevenueChartSkeleton } from "@/app/ui/skeletons";
-export const revalidate = 1000;
+export const revalidate = 60;
 
 export default async function Page() {
   const latestInvoices = await fetchLatestInvoices();
