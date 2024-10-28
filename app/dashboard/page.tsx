@@ -6,10 +6,10 @@ import { fetchRevenue, fetchLatestInvoices } from "@/app/lib/data";
 import { Suspense } from "react";
 import { RevenueChartSkeleton } from "@/app/ui/skeletons";
 import { revalidatePath } from 'next/cache';
+revalidatePath("/dashboard");
 
 export default async function Page() {
   const latestInvoices = await fetchLatestInvoices();
-  revalidatePath("/dashboard");
 
   return (
     <main>
