@@ -8,7 +8,7 @@ import {
   Revenue,
 } from './definitions';
 import { formatCurrency } from './utils';
-export const revalidate = 0;
+
 
 export async function fetchRevenue() {
   try {
